@@ -1,0 +1,44 @@
+1. voting application 
+#WHAT to do?
+where user give vote to the given set of candidates
+
+kya kya hona chahiye?
+.models
+.routes
+.env
+.database
+.server
+
+voting app funtionality
+1. sign-in
+2. list of candidates
+3. vote on of candidates, after one vote they cant't vote again
+4. route shows list of candi. and live vote counts
+5. unique govt id proof name : adharcard
+6. one admin to maintain table of candidates and cant vote
+7. user can change password
+8. login with adhar card and password
+
+-----------------------------------------------------------
+Routes
+
+user authentication
+   /signup:POST create acc
+   /login:POST  login existing acc
+
+voting
+    /candidates:GET list of candi
+    /votes:/candidatesID : post- vote for specific
+
+vote counts: 
+    GET - candidates sorted by their vote counts
+
+user profile
+    /profile:GET 
+    /prof/password: PUT 
+
+ADMIN candi MANAgement
+    /candi: POST: create a new candi.
+    /candi/:candiID : PUT : update an existing candi
+    /candi/:candiID : DELETE 
+
